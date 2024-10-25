@@ -1,0 +1,7 @@
+body { font-family: sans-serif; }
+li {border-bottom: 1px solid black;}
+a {text-decoration: none;}
+.options {list-style: none; text-align: center;}
+.col {display: inline-block; width: 45%; text-align: left;}
+.plans {display: none; text-align: center;}
+.plans:target {display: inline-block;}
