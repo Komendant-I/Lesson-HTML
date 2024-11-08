@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Selectors</title>
+    <style>
+        .tabs {
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #666;
+        }
+        .tabs-item {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 25px 10px 10px 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.25s;
+            height: 100px;
+            width: 90px;
+        }
+        .tabs-item:hover {
+           background-color:  #BBB;
+        }
+        .tabs-link {
+            text-decoration: none;
+            color: #222;
+        }
+        .tabs-options {
+            font-size: 32px;
+            line-height: 6px;
+            background-color: #999;
+            height: 32px;
+            width: 32px;
+            border-radius: 32px;
+            transform: translateX(65px) translateY(-115px);
+            opacity: 0;
+            transition: 0.25s;
+        }
+        .tabs-options:hover {
+            opacity: 0.25;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="tabs-item">
+            <a class="tabs-link" href="">
+                <img src="https://icons.iconarchive.com/icons/limav/flat-gradient-social/72/Github-icon.png" alt="Github-icon">
+                </br>
+                 username
+            </a>
+            <div class="tabs-options">
+                .</br>
+                .</br>
+                .</br>
+            </div>
+        </li>
+        <li class="tabs-item">
+            <a class="tabs-link" href="">
+                <img src="https://icons.iconarchive.com/icons/yootheme/social-bookmark/72/social-facebook-box-blue-icon.png" alt="facebook-icon">
+                </br>
+                username
+            </a>
+            <div class="tabs-options">
+                .</br>
+                .</br>
+                .</br>
+            </div>
+        </li>
+        <li class="tabs-item">
+            <a class="tabs-link" href="">
+                <img src="https://icons.iconarchive.com/icons/arturo-wibawa/akar/72/tiktok-icon.png" alt="tiktok-icon">
+                </br>
+                username
+            </a>
+            <div class="tabs-options">
+                .</br>
+                .</br>
+                .</br>
+            </div>
+        </li>
+    </ul>
+    
+</body>
+</html>
