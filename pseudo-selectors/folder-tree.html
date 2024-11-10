@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo selectors | Directory Tree</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .tree {
+            list-style-type:"┠" ;
+            font-size: 50px;
+        }
+        .folder {
+            color: bisque;
+            padding: 15px 0px 15px 55px;
+            line-height: 10px;
+            background-image: url(https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-document-open-folder-icon.png);
+            background-repeat: no-repeat;
+        }
+        .folder:hover {
+            background-image: url(https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-document-open-icon.png);
+            background-repeat: no-repeat;
+        }
+        .folder:last-child {
+            list-style-type: "┗";
+        }
+        .empty {
+            background-image: url(https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-document-open-folder-icon.png);
+        }
+        .empty:hover {
+            background-image: url(https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-document-open-folder-icon.png);
+        }
+
+        .name {
+            font-size: 18px;
+        }
+        .file {
+            color: bisque;
+            padding: 15px 0px 15px 55px;
+            line-height: 10px;
+            background-image: url(https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-document-properties-icon.png);
+            background-repeat: no-repeat;
+        }
+        .file:hover {
+            color: slategrey;
+        }
+        .file:last-child {
+            list-style-type: "┗";
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="tree">
+        <li class="folder">
+            <div class="name">Project [DONE]</div>
+            </br>
+            <ul class="tree">
+                <li class="file">
+                    <div class="name">File1</div>
+                </li>
+                <li class="file">
+                    <div class="name">File2</div>
+                </li>
+            </ul>
+        </li>
+        <li class="folder">
+            <div class="name">Project [NOW]</div>
+        </br>
+        <ul class="tree">
+            <li class="file">
+                <div class="name">File1</div>
+            </li>
+            <li class="file">
+                <div class="name">File2</div>
+            </li>
+        </ul>
+        </li>
+        <li class="folder empty">
+            <div class="name">Project [TBD]</div>
+        </li>
+    </ul> 
+    
+</body>
+</html>
