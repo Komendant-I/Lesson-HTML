@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRELOADER</title>
+    <style>
+        body {
+            background-color: #444;
+        }
+        .preloader {
+            width: 100px;
+            height: 300px;
+            margin-top: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-image: radial-gradient(white, red, black);
+            animation: bounce 1s 10;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        
+        }
+        .shadow {
+            width: 100px;
+            height: 50px;
+            background-image: radial-gradient(black, transparent);
+            border-radius: 100%;
+            transform: translateY(160px);
+            animation: flicker 1s 10;
+            animation-direction: alternate;
+        }
+        .label {
+            width: 200px;
+            color: bisque;
+            text-align: center;
+            margin: auto;
+        }
+        @keyframes bounce {
+            from { transform: translateY(150px);}
+            to {transform: translateY(0);}
+        }
+        @keyframes flicker {
+            from { opacity: 1; } 
+            to {opacity: 0; transform:scale(0.5);} 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="ball"></div>
+        <div class="shadow"></div>
+    </div>
+</br>
+    <div class="label">
+        Loading...
+    </div>
+    
+</body>
+</html>
