@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors | Cinema </title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial;
+        }
+        .cinema {
+            border: 1px dotted red;
+            padding: 5px;
+            text-align: center;
+        }
+        .cinema span {
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Fuccia-Seat-icon.png);
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema span:hover {
+            content: url(https://icons.iconarchive.com/icons/icons-land/vista-people/48/Person-Male-Dark-icon.png);
+        }
+        .cinema .reserved::before{
+            content: url(https://icons.iconarchive.com/icons/icons-land/vista-people/48/Person-Male-Dark-icon.png);
+            vertical-align: top;
+        }
+        .cinema .vip span {
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Orange-Seat-icon.png);
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema .main span {
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Fuccia-Seat-icon.png);
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>    
+</head>
+<body>
+    <h1>Advanced CSS Selectors <br> Cinema</h1>
+    <div class="cinema">
+        <div class="vip">
+            <h2>VIP</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div>
+        </div>
+        <div class="main">
+            <h2>Main</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>5</span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="reserved">5</span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>5</span><span>6</span><span>7</span><span>8</span></div>
+        </div>
+        <div class="front">
+            <h2>Front</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        </div>
+    </div>
+    
+</body>
+</html>
