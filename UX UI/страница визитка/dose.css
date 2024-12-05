@@ -1,0 +1,96 @@
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+}
+section {
+    text-align: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+h1,h2,h3, h4 {
+    color: #505458;
+}
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0;
+}
+h3 {
+    order: -1;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    text-transform: uppercase;
+    margin: 0;
+}
+p {
+    font-family: "Nunito", sans-serif;
+    margin: 1;
+    font-size: 16px;
+    color: rgb(152, 166, 173);
+}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+ul li {
+    width: 30%;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+h4 {
+    font-family: "Montserrat", sans-serif;;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.list {
+    order: -1;
+    margin-left: 230px;
+    margin-bottom: 15px;
+    width: 60px;
+    padding: 20px; 
+    border-top-left-radius: 28% 26%;
+    border-top-right-radius: 72% 20%;
+    border-bottom-right-radius: 50% 80%;
+    border-bottom-left-radius: 50% 74%;
+    background-color: rgb(195, 217, 238);
+}
+.palette {
+    order: -1;
+    margin-left: 230px;
+    margin-bottom: 15px;
+    width: 60px;
+    padding: 20px; 
+    border-top-left-radius: 28% 26%;
+    border-top-right-radius: 72% 20%;
+    border-bottom-right-radius: 50% 80%;
+    border-bottom-left-radius: 50% 74%;
+    background-color: rgb(175, 248, 238);
+}
+.stacks {
+    order: -1;
+    margin-left: 230px;
+    margin-bottom: 15px;
+    width: 60px;
+    padding: 20px; 
+    border-top-left-radius: 28% 26%;
+    border-top-right-radius: 72% 20%;
+    border-bottom-right-radius: 50% 80%;
+    border-bottom-left-radius: 50% 74%;
+    background-color: rgb(255, 249, 225);
+}

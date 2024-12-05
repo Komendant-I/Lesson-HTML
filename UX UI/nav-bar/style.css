@@ -1,0 +1,52 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #333;
+}
+#navbar {
+    background-color: #555;
+    padding: 0 1.5%;
+}
+#navbar ul {
+    /**border: 1px solid #888;**/
+}
+#navbar li {
+    /**border: 1px solid #777;**/
+    float: left;
+}
+#navbar li a {
+    color: aqua;
+    padding: 35px 9px;
+    display: block;
+}
+#navbar .nav-brand {
+    float: left;
+}
+#navbar .nav-brand .brand {
+    padding: 5px;
+}
+#navbar .nav-main {
+    float: right;
+    margin-right: 10%;
+}
+#navbar .nav-main .phone {
+    font-weight: bold;
+    padding: 35px;
+}
+#navbar .nav-user {
+    float: right;
+}
+#navbar .clear {
+    clear: both;
+}
